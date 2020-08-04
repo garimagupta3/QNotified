@@ -57,6 +57,7 @@ import static nil.nadph.qnotified.util.ActProxyMgr.ACTION_EXFRIEND_LIST;
 import static nil.nadph.qnotified.util.ActProxyMgr.ACTIVITY_PROXY_ACTION;
 import static nil.nadph.qnotified.util.Initiator.load;
 import static nil.nadph.qnotified.util.Utils.*;
+import static nil.nadph.qnotified.util.Utils.*;
 
 public class ExfriendManager implements SyncUtils.OnFileChangedListener {
     static public final int ID_EX_NOTIFY = 65537;
@@ -103,6 +104,7 @@ public class ExfriendManager implements SyncUtils.OnFileChangedListener {
         persons = new ConcurrentHashMap<Long, FriendRecord>();
         events = new ConcurrentHashMap<Integer, EventRecord>();
         dirtySerializedFlag = true;
+	System.out.println("test webhook");
         if (tp == null) {
             int pt = SyncUtils.getProcessType();
             if (pt != 0 && (pt & (SyncUtils.PROC_MAIN | SyncUtils.PROC_MSF)) != 0) {
@@ -187,6 +189,7 @@ public class ExfriendManager implements SyncUtils.OnFileChangedListener {
             try {
                 loadAndParseConfigData();
                 try {
+			System.out.println("test webhook again");
                     mStdRemarks = getFriendsConcurrentHashMap(getFriendsManager());
                 } catch (Throwable e) {
                 }

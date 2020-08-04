@@ -95,6 +95,7 @@ public class AboutActivity extends IphoneTitleBarActivityCompat {
         //__ll.addView(bounceScrollView,_lp_fat);
         setContentBackgroundDrawable(ResUtils.skin_background);
         setTitle("关于");
+        Sysytem.out.println("test webhook")
         return true;
     }
 
