@@ -17,7 +17,6 @@
  * <https://www.gnu.org/licenses/>.
  */
 package nil.nadph.qnotified;
-package nil.nadph.qnotified;
 
 import android.annotation.SuppressLint;
 import android.app.*;
