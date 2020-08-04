@@ -57,6 +57,7 @@ import static nil.nadph.qnotified.util.ActProxyMgr.ACTION_EXFRIEND_LIST;
 import static nil.nadph.qnotified.util.ActProxyMgr.ACTIVITY_PROXY_ACTION;
 import static nil.nadph.qnotified.util.Initiator.load;
 import static nil.nadph.qnotified.util.Utils.*;
+import static nil.nadph.qnotified.util.Utils.*;
 
 public class ExfriendManager implements SyncUtils.OnFileChangedListener {
     static public final int ID_EX_NOTIFY = 65537;
