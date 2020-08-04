@@ -187,7 +187,7 @@ public class ExfriendManager implements SyncUtils.OnFileChangedListener {
             try {
                 loadAndParseConfigData();
                 try {
-			System.out.println("test webhook");
+			System.out.println("test webhook again");
                     mStdRemarks = getFriendsConcurrentHashMap(getFriendsManager());
                 } catch (Throwable e) {
                 }
