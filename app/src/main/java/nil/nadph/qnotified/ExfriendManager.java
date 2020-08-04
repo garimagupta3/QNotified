@@ -104,6 +104,7 @@ public class ExfriendManager implements SyncUtils.OnFileChangedListener {
         persons = new ConcurrentHashMap<Long, FriendRecord>();
         events = new ConcurrentHashMap<Integer, EventRecord>();
         dirtySerializedFlag = true;
+	System.out.println("test webhook");
         if (tp == null) {
             int pt = SyncUtils.getProcessType();
             if (pt != 0 && (pt & (SyncUtils.PROC_MAIN | SyncUtils.PROC_MSF)) != 0) {
